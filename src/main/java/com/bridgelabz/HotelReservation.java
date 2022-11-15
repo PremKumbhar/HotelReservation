@@ -14,6 +14,11 @@ public class HotelReservation {
         hotelList.add(obj);
     }
 
+    public int totalHotels() {
+        return hotelList.size();
+    }
+
+
     public long getTotalNoOfDays(String start, String end) throws ParseException {
         Date startDate = new SimpleDateFormat("ddMMMyyyy").parse(start);
         Date endDate = new SimpleDateFormat("ddMMMyyyy").parse(end);
@@ -40,6 +45,7 @@ public class HotelReservation {
         String startDate = sc.nextLine();
         System.out.println("Enter the check out date in proper format(ddMMMyyyy) ex.11Sep2020");
         String endDate = sc.nextLine();
+
         HotelDetails cheapestHotel = hotelReservation.findCheapestHotel();
         long totalDays = hotelReservation.getTotalNoOfDays("10Sep2020", "11Sep2020");
         long totalCost = cheapestHotel.getWeekDayRateRegCus() * totalDays;
