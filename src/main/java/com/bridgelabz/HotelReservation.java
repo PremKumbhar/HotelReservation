@@ -27,23 +27,6 @@ public class HotelReservation {
     }
 
     public static void main(String[] args) throws Exception {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("*****WELCOME TO HOTEL RESERVATION******");
-//        HotelDetails hotel1 = new HotelDetails("Lakewood", 90, 110, 80, 80);
-//        HotelDetails hotel2 = new HotelDetails("Bridgewoood", 60, 160, 50, 110);
-//        HotelDetails hotel3 = new HotelDetails("Ridgewood", 150, 220, 40, 100);
-//
-//        HotelReservation hotelReservation = new HotelReservation();
-//        hotelReservation.addNewHotel(hotel1);
-//        hotelReservation.addNewHotel(hotel2);
-//        hotelReservation.addNewHotel(hotel3);
-//        System.out.println(hotel1);
-//        System.out.println(hotel2);
-//        System.out.println(hotel3);
-//
-//        System.out.println("CHEAPEST HOTEL");
-//        System.out.println(hotelReservation.findCheapestHotel());
-
         Scanner sc = new Scanner(System.in);
         System.out.println("*****WELCOME TO HOTEL RESERVATION******");
         HotelDetails hotel1 = new HotelDetails("Lakewood", 90, 110, 80, 80);
